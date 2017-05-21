@@ -1,0 +1,20 @@
+1. install mysql database
+in shell run above command
+sudo ./install_mysql.sh install
+
+Q:how to know the default config file path of mysql?
+A:mysql --help | grep -A 1 'Default options'
+Default options are read from the following files in the given order:
+/etc/mysql/my.cnf /etc/my.cnf ~/.my.cnf
+
+Q:centos7 close firewall?
+A:systemctl status firewalld.service 
+systemctl stop firewalld.service 
+
+--------------------------------------
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'192.168.200.1' IDENTIFIED BY 'fuckgoogle' WITH GRANT OPTION;
+flush privileges;
+--------------------------------------
+
+http://www.cnblogs.com/easyzikai/archive/2012/06/17/2552357.html
+http://www.jb51.net/article/47727.htm
